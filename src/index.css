@@ -1,3 +1,14 @@
 a:focus {
   border: 1px solid black;
 }
+
+[role='dialog'] {
+  transition: 0.3s all ease;
+  transform: scale(0.85);
+  opacity: 0;
+}
+
+.visible {
+  transform: scale(1);
+  opacity: 1;
+}
