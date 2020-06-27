@@ -1,9 +1,15 @@
 import React from 'react';
 
+import Navigation from './components/layout/Navigation/Navigation';
+
 class App extends React.Component {
   state = {};
   render() {
-    return <React.Fragment></React.Fragment>;
+    return (
+      <React.Fragment>
+        <Navigation />
+      </React.Fragment>
+    );
   }
 }
 
