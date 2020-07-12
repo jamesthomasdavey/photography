@@ -1,4 +1,5 @@
 .wrapper {
   /* margin-top: 12px; */
-  width: 100%;
+  height: calc(100% - 86px);
+  background: skyblue;
 }

@@ -9,9 +9,9 @@ class Contact extends React.Component {
   render() {
     document.title = 'Contact | James Thomas Davey';
     return (
-      <main>
+      <React.Fragment>
         <ContactForm />
-      </main>
+      </React.Fragment>
     );
   }
 }

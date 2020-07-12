@@ -125,4 +125,14 @@ table {
 
 :root {
   --black: #333333;
+  --white: #fdfdfd;
+}
+
+html {
+  background: orange;
+}
+
+#root {
+  height: 100vh;
+  min-width: 380px;
 }

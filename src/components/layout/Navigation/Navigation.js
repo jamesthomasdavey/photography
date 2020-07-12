@@ -31,6 +31,8 @@ class Navigation extends React.Component {
           this.state.isOpen ? classes.open : '',
           this.state.hasBeenOpened && !this.state.isOpen ? classes.closed : '',
         ].join(' ')}
+        role={this.state.isOpen ? 'dialog' : false}
+        aria-modal={this.state.isOpen ? 'true' : false}
       >
         <MenuButton
           toggleMenu={this.toggleMenu}
