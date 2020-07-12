@@ -11,7 +11,7 @@ const Menu = (props) => {
       role='navigation'
       aria-hidden={props.isOpen ? 'false' : 'true'}
     >
-      <MenuItems />
+      <MenuItems toggleMenu={props.toggleMenu} />
     </div>
   );
 };

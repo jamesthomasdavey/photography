@@ -20,7 +20,8 @@ const MenuButton = (props) => {
         class={[
           classes.bar,
           classes.topBar,
-          props.isOpen ? classes.closeBar : classes.openBar,
+          props.isOpen ? classes.closeBar : '',
+          !props.isOpen && props.hasBeenOpened ? classes.openBar : '',
         ].join(' ')}
       ></span>
       <span
@@ -28,7 +29,8 @@ const MenuButton = (props) => {
         class={[
           classes.bar,
           classes.middleBar,
-          props.isOpen ? classes.closeBar : classes.openBar,
+          props.isOpen ? classes.closeBar : '',
+          !props.isOpen && props.hasBeenOpened ? classes.openBar : '',
         ].join(' ')}
       ></span>
       <span
@@ -36,7 +38,8 @@ const MenuButton = (props) => {
         class={[
           classes.bar,
           classes.bottomBar,
-          props.isOpen ? classes.closeBar : classes.openBar,
+          props.isOpen ? classes.closeBar : '',
+          !props.isOpen && props.hasBeenOpened ? classes.openBar : '',
         ].join(' ')}
       ></span>
     </React.Fragment>

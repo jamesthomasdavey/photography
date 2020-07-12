@@ -12,7 +12,7 @@
   position: absolute;
   width: 46px;
   height: 5px;
-  background: #333;
+  background-color: var(--black);
   border-radius: 2px;
 }
 
@@ -31,7 +31,7 @@
 
 .topBar.openBar {
   animation-name: toTopOpenBar;
-  animation-duration: 0.3s;
+  animation-duration: 0.6s;
 }
 
 @keyframes toTopCloseBar {
@@ -54,9 +54,20 @@
     top: 30px;
     transform: rotate(45deg);
   }
-  100% {
+  50% {
     top: 30px;
+    opacity: 1;
     transform: rotate(45deg);
+  }
+  51% {
+    top: 14px;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  100% {
+    top: 14px;
+    transform: rotate(0);
+    opacity: 1;
   }
 }
 
@@ -74,7 +85,7 @@
 
 .middleBar.openBar {
   animation-name: toMiddleOpenBar;
-  animation-duration: 0.3s;
+  animation-duration: 0.6s;
 }
 
 @keyframes toMiddleCloseBar {
@@ -93,8 +104,16 @@
   0% {
     transform: rotate(-45deg);
   }
-  100% {
+  50% {
     transform: rotate(-45deg);
+    opacity: 1;
+  }
+  51% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -112,7 +131,7 @@
 
 .bottomBar.openBar {
   animation-name: toBottomOpenBar;
-  animation-duration: 0.3s;
+  animation-duration: 0.6s;
 }
 
 @keyframes toBottomCloseBar {
@@ -135,8 +154,16 @@
     top: 30px;
     opacity: 0;
   }
-  100% {
+  50% {
     top: 30px;
     opacity: 0;
+  }
+  51% {
+    top: 46px;
+    opacity: 0;
+  }
+  100% {
+    top: 46px;
+    opacity: 1;
   }
 }

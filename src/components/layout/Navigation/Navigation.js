@@ -32,8 +32,16 @@ class Navigation extends React.Component {
           this.state.hasBeenOpened && !this.state.isOpen ? classes.closed : '',
         ].join(' ')}
       >
-        <MenuButton toggleMenu={this.toggleMenu} isOpen={this.state.isOpen} />
-        <Menu closeMenu={this.closeMenu} isOpen={this.state.isOpen} />
+        <MenuButton
+          toggleMenu={this.toggleMenu}
+          isOpen={this.state.isOpen}
+          hasBeenOpened={this.state.hasBeenOpened}
+        />
+        <Menu
+          toggleMenu={this.toggleMenu}
+          closeMenu={this.closeMenu}
+          isOpen={this.state.isOpen}
+        />
       </div>
     );
   }

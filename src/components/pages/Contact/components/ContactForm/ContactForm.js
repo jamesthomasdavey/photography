@@ -20,7 +20,7 @@ class ContactForm extends React.Component {
     hasFailed: false,
     hasSubmitted: false,
   };
-  formSubmitHandler = (e) => {
+  handleFormSubmit = (e) => {
     e.preventDefault();
     this.setState({ isSubmitting: true }, () => {
       this.checkForErrors(() => {
@@ -38,7 +38,7 @@ class ContactForm extends React.Component {
       });
     });
   };
-  changeInputHandler = (e) => {
+  handleChangeInput = (e) => {
     const fieldName = e.target.name;
     const fieldValue = e.target.value;
     this.setState({ [fieldName]: fieldValue });
@@ -104,7 +104,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className={classes.wrapper}>
-        <form onSubmit={this.formSubmitHandler} autocomplete='on'>
+        <form onSubmit={this.handleFormSubmit} autocomplete='on'>
           <fieldset>
             <legend>Send a Message</legend>
             <div>
@@ -118,7 +118,7 @@ class ContactForm extends React.Component {
                 type='text'
                 aria-describedby={this.state.errors.name ? 'name-error' : ''}
                 value={this.state.name}
-                onChange={this.changeInputHandler}
+                onChange={this.handleChangeInput}
               />
               {this.state.errors.name && (
                 <span id='name-error'>{this.state.errors.name}</span>
@@ -135,7 +135,7 @@ class ContactForm extends React.Component {
                 type='email'
                 aria-describedby={this.state.errors.email ? 'email-error' : ''}
                 value={this.state.email}
-                onChange={this.changeInputHandler}
+                onChange={this.handleChangeInput}
               />
               {this.state.errors.email && (
                 <span id='email-error'>{this.state.errors.email}</span>
@@ -153,7 +153,7 @@ class ContactForm extends React.Component {
                   this.state.errors.message ? 'message-error' : ''
                 }
                 value={this.state.message}
-                onChange={this.changeInputHandler}
+                onChange={this.handleChangeInput}
               />
               {this.state.errors.message && (
                 <span id='message-error'>{this.state.errors.message}</span>
