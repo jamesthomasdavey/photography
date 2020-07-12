@@ -9,6 +9,9 @@ import classes from './ContactForm.module.css';
 import submitForm from './functions/submitForm';
 import isEmpty from './functions/isEmpty';
 
+// img
+import errorIcon from './img/error-icon.svg';
+
 class ContactForm extends React.Component {
   state = {
     name: '',
@@ -102,6 +105,12 @@ class ContactForm extends React.Component {
     });
   };
   render() {
+    let errorIconImage;
+    if (!isEmpty(this.state.errors)) {
+      errorIconImage = (
+        <img src={errorIcon} alt='error' className={classes.errorIconImage} />
+      );
+    }
     return (
       <div className={classes.wrapper}>
         <form onSubmit={this.handleFormSubmit} autocomplete='on'>
@@ -121,7 +130,10 @@ class ContactForm extends React.Component {
                 onChange={this.handleChangeInput}
               />
               {this.state.errors.name && (
-                <span id='name-error'>{this.state.errors.name}</span>
+                <span id='name-error'>
+                  {errorIconImage}
+                  {this.state.errors.name}
+                </span>
               )}
             </div>
             <div>
@@ -138,7 +150,10 @@ class ContactForm extends React.Component {
                 onChange={this.handleChangeInput}
               />
               {this.state.errors.email && (
-                <span id='email-error'>{this.state.errors.email}</span>
+                <span id='email-error'>
+                  {errorIconImage}
+                  {this.state.errors.email}
+                </span>
               )}
             </div>
             <div>
@@ -156,7 +171,10 @@ class ContactForm extends React.Component {
                 onChange={this.handleChangeInput}
               />
               {this.state.errors.message && (
-                <span id='message-error'>{this.state.errors.message}</span>
+                <span id='message-error'>
+                  {errorIconImage}
+                  {this.state.errors.message}
+                </span>
               )}
             </div>
           </fieldset>

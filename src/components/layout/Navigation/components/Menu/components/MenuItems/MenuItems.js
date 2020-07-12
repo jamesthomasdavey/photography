@@ -9,7 +9,11 @@ const MenuItems = (props) => {
   return (
     <ul>
       <li>
-        <Link to='/contact' onClick={blur}>
+        <Link
+          to='/contact'
+          onClick={blur}
+          tabindex={props.isOpen ? false : '-1'}
+        >
           Contact
         </Link>
       </li>
