@@ -63,6 +63,11 @@ html {
   display: inline-block;
 }
 
+.subtitleList > li > a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
 .subtitleList > li::before {
   content: '|';
   padding-left: 24px;

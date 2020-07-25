@@ -3,30 +3,19 @@ import React from 'react';
 import classes from './Resume.module.css';
 
 import downloadicon from './img/downloadicon.svg';
+import resume from './pdf/James Thomas Davey - Resume.pdf';
 
 const Resume = () => {
   document.title = 'Resume | James Thomas Davey';
-  const downloadResume = () => {
-    alert("I haven't added this functionality yet. Sorry dude.");
-  };
-  const linkHandler = (e, cb) => {
-    if (e.key === ' ' || e.key === 'Enter') {
-      e.preventDefault();
-      cb();
-    }
-  };
   return (
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
         <h1 className={classes.nameHeading}>James Thomas Davey</h1>
         <div className={classes.downloadLinkWrapper}>
           <a
-            role='button'
-            onClick={downloadResume}
             className={classes.downloadLink}
-            href='#'
-            onKeyPress={(e) => linkHandler(e, downloadResume)}
-            onKeyDown={(e) => linkHandler(e, downloadResume)}
+            href={resume}
+            download='James Thomas Davey - Resume'
           >
             <img alt='Download Resume' src={downloadicon} />
           </a>
@@ -37,7 +26,11 @@ const Resume = () => {
           </h2>
           <ul className={classes.subtitleList}>
             <li>Seattle, WA</li>
-            <li>james.davey@fastmail.com</li>
+            <li>
+              <a href='mailto:james.davey@fastmail.com'>
+                james.davey@fastmail.com
+              </a>
+            </li>
             <li>(415) 307-8703</li>
           </ul>
           <p className={classes.summary}>
