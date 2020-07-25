@@ -8,18 +8,20 @@ import Main from './components/layout/Main/Main';
 
 // page components
 import Contact from './components/pages/Contact/Contact';
+import Resume from './components/pages/Resume/Resume';
 
 class App extends React.Component {
   state = {};
   render() {
     return (
       <Router>
-        <Navigation />
-        <Main>
-          <Switch>
-            <Route exact path='/contact' component={Contact} />
-          </Switch>
-        </Main>
+        {/* <Navigation /> */}
+        {/* <Main> */}
+        <Switch>
+          {/* <Route exact path='/contact' component={Contact} /> */}
+          <Route exact path='/resume' component={Resume} />
+        </Switch>
+        {/* </Main> */}
       </Router>
     );
   }

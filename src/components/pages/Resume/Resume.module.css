@@ -1,0 +1,171 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #1a4673;
+  padding: 32px 32px;
+}
+
+.wrapper__inner {
+  width: 100%;
+  max-width: 960px;
+  padding: 48px 92px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nameHeading {
+  font-family: var(--open-sans);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 2.8rem;
+  pointer-events: none;
+}
+
+.titleHeading {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  pointer-events: none;
+}
+
+.subtitleList {
+  margin-bottom: 1.2rem;
+}
+
+.subtitleList > li {
+  display: inline-block;
+}
+
+.subtitleList > li::before {
+  content: '|';
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.subtitleList > li:first-child::before {
+  content: '';
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.summary {
+  margin-bottom: 2.5rem;
+  line-height: 1.4rem;
+}
+
+.subHeading {
+  font-family: var(--open-sans);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light-gray);
+  font-size: 1rem;
+  pointer-events: none;
+  letter-spacing: 3.5px;
+  margin-bottom: 1.4rem;
+}
+
+.dateRoleWrapper {
+  position: relative;
+}
+
+.dateHeading {
+  font-weight: 400;
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  pointer-events: none;
+}
+
+.roleHeading {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 1rem;
+  display: inline-block;
+  padding-left: 200px;
+  margin-bottom: 1rem;
+  pointer-events: none;
+}
+
+.expContent {
+  margin-left: 200px;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.expContent > p {
+  margin-bottom: 1rem;
+}
+
+.expContent > ul > li {
+  margin-left: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.expContent > ul > li:last-child {
+  margin-bottom: 0rem;
+}
+
+.educationHeading {
+  position: absolute;
+}
+
+.educationContent {
+  margin-left: 200px;
+  margin-bottom: 2rem;
+}
+
+.educationContent > p > span {
+  display: block;
+}
+
+.skillsList {
+  text-align: center;
+}
+
+.skillsList > li {
+  color: var(--black);
+  display: inline-block;
+  background-color: #ececec;
+  padding: 4px 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+  pointer-events: none;
+}
+
+@media (max-width: 890px) {
+  .wrapper {
+    padding: 32px 16px;
+  }
+  .wrapper__inner {
+    padding: 48px 80px;
+  }
+  .subtitleList > li::before {
+    content: '|';
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .expContent {
+    margin-left: 0;
+  }
+  .educationContent {
+    margin-left: 0;
+  }
+}
+@media (max-width: 678px) {
+  .wrapper__inner {
+    padding: 48px 56px;
+  }
+  .nameHeading {
+    text-align: center;
+  }
+}
