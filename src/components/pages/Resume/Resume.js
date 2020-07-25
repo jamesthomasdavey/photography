@@ -35,7 +35,7 @@ const Resume = () => {
           </ul>
           <p className={classes.summary}>
             Digital accessibility expert specializing in front-end web
-            development, WCAG and Section 508 compliance, and educating
+            development, WCAG and Section 508 conformance, and educating
             developers to improve usability in the digital sphere.
           </p>
         </section>
@@ -74,8 +74,8 @@ const Resume = () => {
                 </li>
                 <li>
                   Oversaw long-term projects and maintained strong client
-                  relationships, often resulting in future sales and product
-                  renewals.
+                  relationships, resulting in multiple future sales and service
+                  product renewals.
                 </li>
               </ul>
             </div>
