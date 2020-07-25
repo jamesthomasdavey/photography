@@ -26,9 +26,9 @@ html {
 }
 
 :root {
-  --black: #333333;
-  --gray: #666666;
-  --light-gray: #999999;
+  --black: #000000;
+  --gray: #767676;
+  --light-gray: #767676;
   --white: #fdfdfd;
   --open-sans: 'Open Sans', sans-serif;
   --nunito-sans: 'Nunito Sans', sans-serif;
