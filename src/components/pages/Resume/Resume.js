@@ -2,12 +2,35 @@ import React from 'react';
 
 import classes from './Resume.module.css';
 
+import downloadicon from './img/downloadicon.svg';
+
 const Resume = () => {
   document.title = 'Resume | James Thomas Davey';
+  const downloadResume = () => {
+    alert("I haven't added this functionality yet. Sorry dude.");
+  };
+  const linkHandler = (e, cb) => {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      cb();
+    }
+  };
   return (
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
         <h1 className={classes.nameHeading}>James Thomas Davey</h1>
+        <div className={classes.downloadLinkWrapper}>
+          <a
+            role='button'
+            onClick={downloadResume}
+            className={classes.downloadLink}
+            href='#'
+            onKeyPress={(e) => linkHandler(e, downloadResume)}
+            onKeyDown={(e) => linkHandler(e, downloadResume)}
+          >
+            <img alt='Download Resume' src={downloadicon} />
+          </a>
+        </div>
         <section aria-labelledby='webAccessibilitySpecialist'>
           <h2 className={classes.titleHeading} id='webAccessibilitySpecialist'>
             Web Accessibility Specialist

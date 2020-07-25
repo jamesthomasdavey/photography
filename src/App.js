@@ -13,6 +13,7 @@ import Resume from './components/pages/Resume/Resume';
 class App extends React.Component {
   state = {};
   render() {
+    document.title = 'James Thomas Davey';
     return (
       <Router>
         {/* <Navigation /> */}
