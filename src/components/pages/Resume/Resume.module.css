@@ -1,13 +1,15 @@
+html {
+  background: #1a4673;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
-  background: #1a4673;
-  padding: 32px 32px;
+  padding: 32px 0;
 }
 
 .wrapper__inner {
-  width: 100%;
-  max-width: 960px;
+  width: 940px;
   padding: 48px 92px;
   margin: 0 auto;
   background: white;
@@ -20,9 +22,9 @@
   font-weight: 600;
   color: var(--black);
   font-size: 2rem;
-  line-height: 3rem;
-  letter-spacing: 0.25rem;
-  margin-bottom: 2.8rem;
+  line-height: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 44px;
   pointer-events: none;
 }
 
@@ -30,12 +32,12 @@
   font-weight: 700;
   color: var(--black);
   font-size: 1.2rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 4px;
   pointer-events: none;
 }
 
 .subtitleList {
-  margin-bottom: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .subtitleList > li {
@@ -55,8 +57,8 @@
 }
 
 .summary {
-  margin-bottom: 2.5rem;
-  line-height: 1.4rem;
+  margin-bottom: 40px;
+  line-height: 24px;
 }
 
 .subHeading {
@@ -67,7 +69,7 @@
   font-size: 1rem;
   pointer-events: none;
   letter-spacing: 3.5px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 24px;
 }
 
 .dateRoleWrapper {
@@ -89,36 +91,41 @@
   font-size: 1rem;
   display: inline-block;
   padding-left: 200px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   pointer-events: none;
 }
 
 .expContent {
   margin-left: 200px;
-  line-height: 1.4rem;
-  margin-bottom: 2rem;
+  line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .expContent > p {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .expContent > ul > li {
-  margin-left: 2rem;
-  margin-bottom: 0.4rem;
+  margin-left: 32px;
+  margin-bottom: 7px;
 }
 
 .expContent > ul > li:last-child {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
+}
+
+.educationSection {
+  position: relative;
 }
 
 .educationHeading {
   position: absolute;
+  top: -1.5px;
 }
 
 .educationContent {
   margin-left: 200px;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .educationContent > p > span {
@@ -142,12 +149,10 @@
   pointer-events: none;
 }
 
-@media (max-width: 890px) {
-  .wrapper {
-    padding: 32px 16px;
-  }
+@media (max-width: 960px) {
   .wrapper__inner {
-    padding: 48px 80px;
+    width: 748px;
+    padding: 48px 64px;
   }
   .subtitleList > li::before {
     content: '|';
@@ -161,11 +166,54 @@
     margin-left: 0;
   }
 }
-@media (max-width: 678px) {
+@media (max-width: 768px) {
   .wrapper__inner {
-    padding: 48px 56px;
+    width: 634px;
+    padding: 48px 54px;
   }
   .nameHeading {
     text-align: center;
+  }
+  .titleHeading {
+    text-align: center;
+  }
+  .subtitleList {
+    text-align: center;
+  }
+}
+
+@media (max-width: 654px) {
+  .wrapper__inner {
+    width: 554px;
+    padding: 48px 46px;
+  }
+  .subtitleList > li::before {
+    content: '';
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .subtitleList > li {
+    display: block;
+  }
+  .subHeading {
+    text-align: center;
+  }
+  .dateHeading {
+    position: relative;
+  }
+  .roleHeading {
+    padding-left: 0;
+    display: block;
+  }
+  .educationHeading {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 553px) {
+  .wrapper__inner {
+    width: 100%;
+    padding: 48px 42px;
   }
 }

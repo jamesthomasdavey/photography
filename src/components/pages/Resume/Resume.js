@@ -36,31 +36,30 @@ const Resume = () => {
             </h3>
             <div className={classes.expContent}>
               <p>
-                Responsibilities include: writing technical reports and other
-                documentation, such as handbooks and bulletins, for use by
-                engineering staff, management, and customers, analyzing project
-                requests and proposals and engineering data to determine
-                feasibility, predictability, cost and production time of
-                aerospace or aeronautical product.
+                Responsible for conducting accessibility audits and design
+                reviews to comply with a multitude of legal standards. Provided
+                consultation services for organizations to minimize risk of
+                their websites, mobile apps, and software.
               </p>
               <ul>
                 <li>
-                  Here is a description of one thing that I do. It's probably
-                  not all that impressive, actually. I don't even know what I'm
-                  doing with my life and I probably won't find happiness.
+                  Authored VPAT documents following comprehensive audits within
+                  tight deadlines, enabling organizations to sell into the
+                  federal government and showcase their accessibility awareness.
                 </li>
                 <li>
-                  I also do other things. This is going to be two lines. Butt
-                  muncher fart face tool bag stuck in the ether for eternity.
+                  Coached large teams of developers and designers from Fortune
+                  500 companies of varying industries.
                 </li>
                 <li>
-                  Here is a third bullet, because this is the job that is most
-                  relevant to me. Maybe this will make all the difference.
+                  Led remediation efforts to meet WCAG criteria by collaborating
+                  with developers, providing guidance ranging from high-level
+                  direction to code-level recommendations.
                 </li>
                 <li>
-                  Okay I am gonna go out on a limb here and say that I should be
-                  allowed to put in a fourth bullet, based on everything that
-                  I've done.
+                  Oversaw long-term projects and maintained strong client
+                  relationships, often resulting in future sales and product
+                  renewals.
                 </li>
               </ul>
             </div>
@@ -73,22 +72,30 @@ const Resume = () => {
               </div>
             </h3>
             <div className={classes.expContent}>
+              <p>
+                Responsible for designing photo templates, configuring image
+                software, and supporting a team of photographers, videographers,
+                and technicians.
+              </p>
               <ul>
                 <li>
-                  Edited, organized, and configured online delivery of a high
-                  volume of digital assets for delivery including portraits,
-                  event coverage, and product photography.
+                  Edited and organized images and videos ranging from portraits,
+                  event coverage, and product photography. Optimized digital
+                  assets for online and print delivery in large volumes.
                 </li>
                 <li>
-                  Created documentation for software, camera, and lighting for
-                  complex studio setups. Oversaw all levels of the photographic
-                  process.
+                  Wrote documentation for software, camera, and lighting of
+                  complex studio setups, streamlining the creation of marketable
+                  photo products.
                 </li>
               </ul>
             </div>
           </section>
         </section>
-        <section aria-labelledby='education'>
+        <section
+          className={classes.educationSection}
+          aria-labelledby='education'
+        >
           <h2
             className={[classes.subHeading, classes.educationHeading].join(' ')}
             id='education'
@@ -101,8 +108,12 @@ const Resume = () => {
             </h3>
             <div className={classes.educationContent}>
               <p>
-                <span>BA in Film and Technocultural Studies (2014)</span>
+                <span>B.A. in Film and Technocultural Studies (2014)</span>
                 <span>Cumulative GPA: 3.72/4.00</span>
+                <span>
+                  Placed on the Dean's Honors List for five consecutive
+                  quarters.
+                </span>
               </p>
             </div>
           </section>
@@ -116,6 +127,7 @@ const Resume = () => {
             <li>Section 508</li>
             <li>ADA</li>
             <li>User Experience</li>
+            <li>Inclusive Design</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
