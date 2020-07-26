@@ -7,6 +7,9 @@ import resumePdf from './pdf/James Thomas Davey - Resume.pdf';
 
 const Resume = () => {
   document.title = 'Resume | James Thomas Davey';
+  document
+    .querySelector('html')
+    .setAttribute('style', 'background-color: #8fd2af;');
   return (
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
