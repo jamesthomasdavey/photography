@@ -145,6 +145,11 @@ html {
 .educationHeading {
   position: absolute;
   top: -1.5px;
+  margin-bottom: 0;
+}
+
+.schoolHeading {
+  margin-bottom: 0;
 }
 
 .educationContent {
@@ -187,7 +192,7 @@ html {
     margin-left: 0;
   }
   .educationContent {
-    margin-left: 0;
+    margin-left: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -247,6 +252,10 @@ html {
   .educationHeading {
     position: relative;
     top: 0;
+    margin-bottom: 28px;
+  }
+  .educationContent {
+    margin-left: 0;
   }
 }
 

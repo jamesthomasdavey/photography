@@ -160,7 +160,10 @@ const Resume = () => {
             Education
           </h2>
           <section aria-labelledby='ucDavis'>
-            <h3 className={classes.roleHeading} id='ucDavis'>
+            <h3
+              className={[classes.roleHeading, classes.schoolHeading].join(' ')}
+              id='ucDavis'
+            >
               University of California, Davis
             </h3>
             <div className={classes.educationContent}>
