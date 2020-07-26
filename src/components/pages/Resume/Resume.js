@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './Resume.module.css';
 
 import downloadicon from './img/downloadicon.svg';
-import resume from './pdf/James Thomas Davey - Resume.pdf';
+import resumePdf from './pdf/James Thomas Davey - Resume.pdf';
 
 const Resume = () => {
   document.title = 'Resume | James Thomas Davey';
@@ -14,7 +14,7 @@ const Resume = () => {
         <div className={classes.downloadLinkWrapper}>
           <a
             className={classes.downloadLink}
-            href={resume}
+            href={resumePdf}
             download='James Thomas Davey - Resume'
           >
             <img alt='Download Resume' src={downloadicon} />
