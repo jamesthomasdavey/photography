@@ -9,6 +9,7 @@ import Main from './components/layout/Main/Main';
 // page components
 import Contact from './components/pages/Contact/Contact';
 import Resume from './components/pages/Resume/Resume';
+import Menudo from './components/pages/Menudo/Menudo';
 
 class App extends React.Component {
   state = {};
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Switch>
           {/* <Route exact path='/contact' component={Contact} /> */}
           <Route exact path='/resume' component={Resume} />
+          <Route exact path='/menudo' component={Menudo} />
         </Switch>
         {/* </Main> */}
       </Router>
