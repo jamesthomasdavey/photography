@@ -6,23 +6,11 @@
 
 .wrapper__inner {
   max-width: 950px;
-  padding: 48px 80px;
+  padding: 80px;
   margin: 0 auto;
   background: white;
   box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.25);
   position: relative;
-}
-
-.nameHeading {
-  font-family: var(--open-sans);
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--black);
-  font-size: 2rem;
-  line-height: 48px;
-  letter-spacing: 4px;
-  margin-bottom: 64px;
-  pointer-events: none;
 }
 
 .wrapper__inner > p {

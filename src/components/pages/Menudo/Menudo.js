@@ -10,7 +10,6 @@ const Menudo = () => {
   return (
     <div className={classes.wrapper}>
       <main className={classes.wrapper__inner}>
-        <h1 className={classes.nameHeading}>Menudo</h1>
         <p>
           I can’t sleep, but when I’m sure my wife Vicky is asleep, I get up and
           look through our bedroom window, across the street, at Oliver and
