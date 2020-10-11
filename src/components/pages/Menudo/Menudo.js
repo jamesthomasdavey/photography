@@ -362,18 +362,15 @@ const Menudo = () => {
           I took a flight out there to make the arrangements. She was still at
           the coroner’s, and they had her purse and her groceries behind the
           desk in the office. I didn’t bother to look in the purse they handed
-          me. But what
-        </p>
-        <p>
-          she had from the grocery store was a jar of Metamucil, two
-          grapefruits, a carton of cottage cheese, a quart of buttermilk, some
-          potatoes and onions, and a package of ground meat that was beginning
-          to change color. Boy! I cried when I saw those things. I couldn’t
-          stop. I didn’t think I’d ever quit crying. The woman who worked at the
-          desk was embarrassed and brought me a glass of water. They gave me a
-          bag for my mother’s groceries and another bag for her personal
-          effects—her purse and her dentures. Later, I put the dentures in my
-          coat pocket and drove them down in a rental car and gave them to
+          me. But what she had from the grocery store was a jar of Metamucil,
+          two grapefruits, a carton of cottage cheese, a quart of buttermilk,
+          some potatoes and onions, and a package of ground meat that was
+          beginning to change color. Boy! I cried when I saw those things. I
+          couldn’t stop. I didn’t think I’d ever quit crying. The woman who
+          worked at the desk was embarrassed and brought me a glass of water.
+          They gave me a bag for my mother’s groceries and another bag for her
+          personal effects—her purse and her dentures. Later, I put the dentures
+          in my coat pocket and drove them down in a rental car and gave them to
           somebody at the funeral home.
         </p>
         <p>
@@ -479,14 +476,14 @@ const Menudo = () => {
         </p>
         <p>
           Once, when Molly was away in that place and I wasn’t in my right
-          mind—let’s face it, I was crazy too-one night I was at my friend
+          mind—let’s face it, I was crazy too—one night I was at my friend
           Alfredo’s house, a bunch of us drinking and listening to records. I
           didn’t care any longer what happened to me. Everything, I thought,
           that could happen had happened. I felt unbalanced. I felt lost.
           Anyway, there I was at Alfredo’s. His paintings of tropical birds and
           animals hung on every wall in his house, and there were paintings
           standing around in the rooms, leaning against things—table-legs, say,
-          or his brick- and-board bookcase, as well as being stacked on his back
+          or his brick-and-board bookcase, as well as being stacked on his back
           porch. The kitchen served as his studio, and I was sitting at the
           kitchen table with a drink in front of me. An easel stood off to one
           side in front of the window that overlooked the alley, and there were
@@ -501,9 +498,8 @@ const Menudo = () => {
         </p>
         <p>
           “What’s going on, man?” Alfredo said, when he turned and saw the state
-          I was in. “Hey, what is it?
+          I was in. “Hey, what is it? What’s going on with you?”
         </p>
-        <p>What’s going on with you?”</p>
         <p>
           I couldn’t tell him. What could I say? I thought I was having some
           kind of an attack. I managed to raise my shoulders and let them drop.
@@ -585,7 +581,7 @@ const Menudo = () => {
         </p>
         <p>
           On the back porch I find some old jeans and a sweatshirt, and I change
-          out of my pajamas. Then I put on my white canvas shoes—”wino” shoes,
+          out of my pajamas. Then I put on my white canvas shoes—“wino” shoes,
           Alfredo would have called them. Alfredo, where are you?
         </p>
         <p>
