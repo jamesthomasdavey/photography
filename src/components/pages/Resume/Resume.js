@@ -37,9 +37,10 @@ const Resume = () => {
             <li>(415) 307-8703</li>
           </ul>
           <p className={classes.summary}>
-            Digital accessibility expert specializing in front-end web
-            development, WCAG and Section 508 conformance, and educating
-            developers to improve usability in the digital sphere.
+            Digital accessibility expert with DHS Trusted Tester certification,
+            specializing in front-end web development, WCAG and Section 508
+            conformance, and educating developers to improve usability in the
+            digital sphere.
           </p>
         </section>
         <section aria-labelledby='workExperience'>
@@ -50,7 +51,7 @@ const Resume = () => {
             <h3 className={classes.dateRoleWrapper} id='levelAccess'>
               <div className={classes.dateHeading}>Mar, 2019 - Present</div>
               <div className={classes.roleHeading}>
-                Level Access, Accessibility Analyst
+                Level Access, Senior Accessibility Analyst
               </div>
             </h3>
             <div className={classes.expContent}>
