@@ -16,7 +16,7 @@
 
 .heading {
   background-color: white;
-  box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 10px 30px 10px rgba(255, 255, 255, 0.25);
   font-size: 1.5rem;
   color: var(--black);
   font-weight: 600;
@@ -32,7 +32,7 @@
 
 .noteWrapper {
   background-color: white;
-  box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 10px 30px 10px rgba(255, 255, 255, 0.25);
   width: 100%;
   padding: 1.8rem 2rem;
   text-align: left;
@@ -43,4 +43,13 @@
 }
 
 .date {
+}
+
+.bgCover {
+  z-index: 998;
+  opacity: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
