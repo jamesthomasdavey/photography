@@ -19,7 +19,6 @@ class Home extends React.Component {
             <p className={classes.date}>11/16/2020</p>
           </div>
         </div>
-        <div className={classes.bgCover} />
         <ImageFadeIn
           style={{
             height: '100%',
