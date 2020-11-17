@@ -1,0 +1,160 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 18px;
+}
+
+.nameHeading,
+.nameHeading > a {
+  font-family: var(--open-sans);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.externalLinkIcon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  top: -2px;
+}
+
+.titleHeading {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.subtitleList {
+  margin-bottom: 6px;
+}
+
+.subtitleList > li {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.subtitleList > li > a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.subtitleList > li::before {
+  content: '|';
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.subtitleList > li:first-child::before {
+  content: '';
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.summary {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  line-height: 18px;
+}
+
+.subHeading {
+  font-family: var(--open-sans);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light-gray);
+  font-size: 0.8rem;
+  letter-spacing: 3.5px;
+  margin-bottom: 12px;
+}
+
+.dateRoleWrapper {
+  position: relative;
+}
+
+.dateHeading {
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+}
+
+.roleHeading {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 0.9rem;
+  display: inline-block;
+  padding-left: 170px;
+  margin-bottom: 10px;
+}
+
+.expContent {
+  margin-left: 170px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+
+.expContent > p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.expContent > ul > li {
+  font-size: 0.9rem;
+  margin-left: 24px;
+  margin-bottom: 7px;
+}
+
+.expContent > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.educationSection {
+  position: relative;
+}
+
+.educationHeading {
+  position: absolute;
+  top: -1.5px;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.schoolHeading {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.educationContent {
+  margin-left: 170px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+
+.educationContent > p > span {
+  display: block;
+}
+
+.skillsList {
+  text-align: center;
+}
+
+.skillsList > li {
+  color: var(--black);
+  display: inline-block;
+  background-color: #ddf1e7;
+  padding: 2px 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 0.77rem;
+  margin-bottom: 14px;
+}
