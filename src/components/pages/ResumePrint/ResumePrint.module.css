@@ -13,7 +13,7 @@
   font-size: 1.5rem;
   line-height: 36px;
   letter-spacing: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   text-decoration: none;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .subtitleList > li > a {
-  color: var(--gray);
-  text-decoration: none;
+  color: #36845c;
+  text-decoration: underline;
 }
 
 .subtitleList > li::before {
@@ -113,7 +113,7 @@
 }
 
 .expContent > ul > li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 .educationSection {
@@ -143,6 +143,7 @@
 }
 
 .skillsList {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -150,9 +151,9 @@
   color: var(--black);
   display: inline-block;
   background-color: #ddf1e7;
-  padding: 2px 5px;
-  margin-left: 8px;
-  margin-right: 8px;
+  padding: 4px 12px;
+  margin-left: 22px;
+  margin-right: 22px;
   border-radius: 6px;
   font-size: 0.77rem;
   margin-bottom: 14px;

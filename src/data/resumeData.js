@@ -7,37 +7,37 @@ const resumeData = {
   summary:
     'Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability in the digital sphere.',
   workExperiences: [
-    // {
-    //   dates: 'Jul, 2020 - Present',
-    //   company: 'Kaiser Permanente',
-    //   title: 'Accessibility Design Specialist',
-    //   summary:
-    //     'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-    //   responsibilities: [
-    //     'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-    //     'Lorem ipsum Lorem ipsum Lorem ipsum',
-    //     'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-    //   ],
-    // },
+    {
+      dates: 'Jul, 2020 - Present',
+      company: 'Kaiser Permanente',
+      title: 'Accessibility Design Specialist (Contract)',
+      summary:
+        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and sitewide, to be used by millions of current and future members.",
+      responsibilities: [
+        'Collaborated with the design team to maximize accessibility and usability of components before handing off to the development team.',
+        "Defined new accessibility optimizations for Kaiser's design system documentation, upholding their high standards as a healthcare industry leader.",
+      ],
+    },
     {
       dates: 'Mar, 2019 - Present',
       company: 'Level Access',
       title: 'Senior Accessibility Analyst',
       summary:
-        'Responsible for conducting accessibility audits and design reviews to comply with legal standards, helping organizations to minimize risk for their websites, mobile applications, and software.',
+        'Responsible for conducting accessibility audits to comply with legal standards, helping organizations to minimize risk for their websites, mobile applications, and software.',
       responsibilities: [
-        'Authored VPAT documents following comprehensive audits within tight deadlines, enabling organizations to sell into the federal government and showcase their accessibility awareness.',
-        'Trained large teams of developers and designers from Fortune 500 companies of varying industries.',
-        'Led remediation efforts to meet WCAG success criteria, providing guidance ranging from high-level direction to code-level recommendations.',
+        //and showcase their accessibility awareness.
         'Oversaw long-term projects and maintained strong client relationships, resulting in multiple future sales and service product renewals.',
+        'Led remediation efforts to meet WCAG success criteria, providing guidance ranging from high-level direction to code-level recommendations.',
+        'Authored VPAT documents following comprehensive audits within tight deadlines, enabling organizations to sell into the federal government',
+        'Trained large teams of developers and designers from Fortune 500 companies.', // of varying industries?
       ],
     },
     {
       dates: 'Mar, 2018 - Mar, 2019',
       company: 'Freelance',
       title: 'Web Developer',
-      summary:
-        'Designed and launched web applications using modern front-end technology for businesses and personal commissions.',
+      // summary:
+      //   'Designed and launched web applications using modern front-end technology for businesses and personal commissions.',
       responsibilities: [
         'Built websites using VanillaJS and JavaScript frameworks and libraries such as React, Mongoose, and Express with Node.js.',
         'Implemented advanced JavaScript concepts such as promises, async/await, callbacks, recursion, and closures.',
@@ -47,8 +47,8 @@ const resumeData = {
       dates: 'Mar, 2016 - Mar, 2018',
       company: 'Orange Photography',
       title: 'Digital Tech',
-      summary:
-        'Responsible for designing photo templates, configuring image software, and supporting a team of photographers, videographers, and technicians.',
+      // summary:
+      //   'Responsible for designing photo templates, configuring image software, and supporting a team of photographers, videographers, and technicians.',
       responsibilities: [
         'Edited, organized, and optimized digital assets for online and print delivery in large volumes.',
         'Wrote documentation for software, camera, and lighting of complex studio setups, streamlining the creation of marketable photo products.',
