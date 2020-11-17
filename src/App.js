@@ -8,8 +8,8 @@ import Main from './components/layout/Main/Main';
 
 // page components
 import Contact from './components/pages/Contact/Contact';
-import Resume from './components/pages/Resume/Resume';
 import Home from './components/pages/Home/Home';
+import Resume from './components/pages/Resume/Resume';
 
 class App extends React.Component {
   state = {};
