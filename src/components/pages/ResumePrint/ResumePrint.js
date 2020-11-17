@@ -75,10 +75,8 @@ const Resume = () => {
           </div>
         </section>
       </section>
-      <section aria-labelledby='technicalSkills'>
-        <h2 className={classes.subHeading} id='technicalSkills'>
-          Technical Skills
-        </h2>
+      <section>
+        <h2 className={classes.subHeading}>Technical Skills</h2>
         <ul className={classes.skillsList}>
           {resumeData.technicalSkills.map(technicalSkill => {
             return <li>{technicalSkill}</li>;
