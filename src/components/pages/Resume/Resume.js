@@ -50,7 +50,9 @@ const ResumePrint = () => {
                   </div>
                 </h3>
                 <div className={classes.expContent}>
-                  <p>{workExperience.summary}</p>
+                  {workExperience.summary && (
+                    <p id='hey'>{workExperience.summary}</p>
+                  )}
                   <ul>
                     {workExperience.responsibilities.map(responsibility => {
                       return <li>{responsibility}</li>;
