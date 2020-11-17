@@ -29,7 +29,7 @@
 .titleHeading {
   font-weight: 700;
   color: var(--black);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 6px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .subtitleList > li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: inline-block;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .summary {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 16px;
   line-height: 18px;
 }
@@ -81,7 +81,7 @@
 
 .dateHeading {
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -90,7 +90,7 @@
 .roleHeading {
   font-weight: 700;
   color: var(--black);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: inline-block;
   padding-left: 170px;
   margin-bottom: 10px;
@@ -103,12 +103,12 @@
 }
 
 .expContent > p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 12px;
 }
 
 .expContent > ul > li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-left: 24px;
   margin-bottom: 7px;
 }
@@ -130,13 +130,13 @@
 
 .schoolHeading {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .educationContent {
   margin-left: 170px;
   margin-bottom: 18px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .educationContent > p > span {
