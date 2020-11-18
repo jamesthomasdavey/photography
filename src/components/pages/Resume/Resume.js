@@ -30,7 +30,7 @@ const ResumePrint = () => {
           <ul className={classes.subtitleList}>
             <li>{resumeData.location}</li>
             <li>
-              <a href='mailto:james.davey@fastmail.com'>{resumeData.email}</a>
+              <a href={`mailto:${resumeData.email}`}>{resumeData.email}</a>
             </li>
             <li>{resumeData.phoneNumber}</li>
           </ul>
