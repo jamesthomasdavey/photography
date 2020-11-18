@@ -12,7 +12,7 @@ const resumeData = {
       company: 'Kaiser Permanente',
       title: 'Accessibility Design Specialist (Contract)',
       summary:
-        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and sitewide, to be used by millions of current and future members.",
+        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and site-wide, to be used by millions of current and future members.",
       responsibilities: [
         'Collaborated with the design team to maximize accessibility and usability of components before handing off to the development team.',
         "Defined new accessibility optimizations for Kaiser's design system documentation, upholding their standards as a healthcare industry leader.",
