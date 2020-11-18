@@ -28,7 +28,7 @@ const resumeData = {
         //and showcase their accessibility awareness.
         'Oversaw long-term projects and maintained strong client relationships, resulting in multiple future sales and service product renewals.',
         'Led remediation efforts to meet WCAG success criteria, providing guidance ranging from high-level direction to code-level recommendations.',
-        'Authored VPAT documents following comprehensive audits within tight deadlines, enabling organizations to sell into the federal government',
+        'Authored VPAT documents following comprehensive audits within tight deadlines, enabling organizations to sell into the federal government.',
         'Conducted training sessions for developers and designers from Fortune 500 companies.', // of varying industries?
       ],
     },
