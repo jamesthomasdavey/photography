@@ -65,6 +65,11 @@
   text-decoration: underline;
 }
 
+.subtitleList > li > a:hover {
+  /* color: #36845c; */
+  text-decoration: none;
+}
+
 .subtitleList > li::before {
   content: '|';
   padding-left: 24px;

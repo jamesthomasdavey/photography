@@ -14,9 +14,9 @@ class Home extends React.Component {
           <h1 className={classes.heading}>Under construction</h1>
           <div className={classes.noteWrapper}>
             <p className={classes.note}>
-              Hello. I am working on some updates. I hope to see you again soon.
+              Hello. I am working on some updates. Be back soon.
             </p>
-            <p className={classes.date}>11/16/2020</p>
+            <p className={classes.date}>11/18/2020</p>
           </div>
         </div>
         <div className={classes.bgCover} />
