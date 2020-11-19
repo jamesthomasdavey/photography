@@ -1,11 +1,10 @@
 const resumeData = {
   name: 'James Thomas Davey',
-  jobTitle: 'Accessibility Analyst',
   location: 'Seattle, WA',
   email: 'james.davey@fastmail.com',
   phoneNumber: '(415)-307-8703',
   summary:
-    'Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers and designers to improve usability across all platforms.',
+    'Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.',
   workExperiences: [
     {
       dates: 'Jul, 2020 - Present',
@@ -64,12 +63,14 @@ const resumeData = {
     'WCAG',
     'Section 508',
     'ADA',
-    'User Experience',
+    'Assistive Technology',
     'Inclusive Design',
     'HTML',
     'CSS',
     'JavaScript',
     'React',
+    'Git',
+    'Jira',
   ],
 };
 
