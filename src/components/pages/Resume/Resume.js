@@ -36,8 +36,10 @@ const ResumePrint = () => {
           </ul>
           <p className={classes.summary}>{resumeData.summary}</p>
         </section>
-        <section>
-          <h2 className={classes.subHeading}>Work Experience</h2>
+        <section aria-labelledby='workExperienceHeading'>
+          <h2 id='workExperienceHeading' className={classes.subHeading}>
+            Work Experience
+          </h2>
           {resumeData.workExperiences.map(workExperience => {
             return (
               <section>
@@ -63,8 +65,12 @@ const ResumePrint = () => {
             );
           })}
         </section>
-        <section className={classes.educationSection}>
+        <section
+          aria-labelledby='educationHeading'
+          className={classes.educationSection}
+        >
           <h2
+            id='educationHeading'
             className={[classes.subHeading, classes.educationHeading].join(' ')}
           >
             Education
@@ -82,8 +88,10 @@ const ResumePrint = () => {
             </div>
           </section>
         </section>
-        <section>
-          <h2 className={classes.subHeading}>Technical Skills</h2>
+        <section aria-labelledby='technicalSkillsHeading'>
+          <h2 id='technicalSkillsHeading' className={classes.subHeading}>
+            Technical Skills
+          </h2>
           <ul className={classes.skillsList}>
             {resumeData.technicalSkills.map(technicalSkill => {
               return <li>{technicalSkill}</li>;
