@@ -21,7 +21,8 @@
   font-size: 2rem;
   line-height: 48px;
   letter-spacing: 4px;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 12px;
   pointer-events: none;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .subtitleList {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .subtitleList > li {
@@ -77,8 +78,8 @@
 }
 
 .summary {
-  margin-bottom: 48px;
   line-height: 24px;
+  margin-bottom: 40px;
 }
 
 .subHeading {

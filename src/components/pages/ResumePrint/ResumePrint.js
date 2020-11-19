@@ -21,7 +21,7 @@ const Resume = () => {
         </a>
       </h1>
       <section>
-        <h2 className={classes.titleHeading}>{resumeData.jobTitle}</h2>
+        {/* <h2 className={classes.titleHeading}>{resumeData.jobTitle}</h2> */}
         <ul className={classes.subtitleList}>
           <li>{resumeData.location}</li>
           <li>
