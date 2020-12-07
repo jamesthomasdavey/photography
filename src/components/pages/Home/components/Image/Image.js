@@ -1,6 +1,5 @@
 // packages
 import React, { useState } from 'react';
-import ImageFadeIn from 'react-image-fade-in';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // css
@@ -9,29 +8,23 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const Image = ({ source, alt, vert }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageFaded, setImageFaded] = useState(false);
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
   const showImage = () => {
     if (imageLoaded) {
       return (
-        <ImageFadeIn
-          loadAsBackgroundImage={true}
+        <div
+          className={classes.img}
           style={{
-            width: '100%',
-            height: '100%',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            backgroundImage: `url(${source})`,
           }}
-          src={source}
-          opacityTransition={2}
-          role={alt ? 'img' : undefined}
-        />
+        ></div>
       );
     }
   };
-  const showLoader = () => {
+  const hideLoader = () => {
     if (!imageLoaded) {
       return (
         <LazyLoadImage
@@ -48,7 +41,7 @@ const Image = ({ source, alt, vert }) => {
     <div className={classes.wrapper}>
       <div className={classes.innerWrapper}>
         {showImage()}
-        {showLoader()}
+        {hideLoader()}
       </div>
     </div>
   );
