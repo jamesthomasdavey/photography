@@ -6,6 +6,6 @@
 .innerWrapper {
   width: 100%;
   min-width: 320px;
-  max-width: 100vh;
+  max-width: 960px;
   margin: 0 auto;
 }
