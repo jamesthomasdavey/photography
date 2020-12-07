@@ -29,30 +29,121 @@ import img0018 from './img/0018.jpg';
 import img0019 from './img/0019.jpg';
 import img0020 from './img/0020.jpg';
 
+const images = [
+  {
+    src: img0001,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0002,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0003,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0004,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0005,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0006,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0007,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0008,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0009,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0010,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0011,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0012,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0013,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0014,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0015,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0016,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0017,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0018,
+    vert: true,
+    alt: '',
+  },
+  {
+    src: img0019,
+    vert: false,
+    alt: '',
+  },
+  {
+    src: img0020,
+    vert: false,
+    alt: '',
+  },
+];
+
 const Home = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.innerWrapper}>
-        <Image source={img0001} />
-        <Image source={img0002} />
-        <Image source={img0003} />
-        <Image source={img0004} />
-        <Image source={img0005} />
-        <Image source={img0006} />
-        <Image source={img0007} />
-        <Image source={img0008} />
-        <Image source={img0009} />
-        <Image source={img0010} />
-        <Image source={img0011} />
-        <Image source={img0012} />
-        <Image source={img0013} />
-        <Image source={img0014} />
-        <Image source={img0015} />
-        <Image source={img0016} />
-        <Image source={img0017} />
-        <Image source={img0018} />
-        <Image source={img0019} />
-        <Image source={img0020} />
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            source={image.src}
+            alt={image.alt}
+            vert={image.vert}
+          />
+        ))}
       </div>
     </div>
   );

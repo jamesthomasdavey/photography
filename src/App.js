@@ -3,11 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // layout components
-import Navigation from './components/layout/Navigation/Navigation';
-import Main from './components/layout/Main/Main';
+// import Navigation from './compone/nts/layout/Navigation/Navigation';
+// import Main from './components/layout/Main/Main';
 
 // page components
-import Contact from './components/pages/Contact/Contact';
+// import Contact from './components/pages/Contact/Contact';
 import Home from './components/pages/Home/Home';
 import Resume from './components/pages/Resume/Resume';
 // import ResumePrint from './components/pages/ResumePrint/ResumePrint';
