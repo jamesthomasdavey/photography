@@ -32,102 +32,82 @@ import img0020 from './img/0020.jpg';
 const images = [
   {
     src: img0001,
-    vert: false,
     alt: '',
   },
   {
     src: img0002,
-    vert: true,
     alt: '',
   },
   {
     src: img0003,
-    vert: true,
     alt: '',
   },
   {
     src: img0004,
-    vert: false,
     alt: '',
   },
   {
     src: img0005,
-    vert: true,
     alt: '',
   },
   {
     src: img0006,
-    vert: false,
     alt: '',
   },
   {
     src: img0007,
-    vert: false,
     alt: '',
   },
   {
     src: img0008,
-    vert: false,
     alt: '',
   },
   {
     src: img0009,
-    vert: false,
     alt: '',
   },
   {
     src: img0010,
-    vert: false,
     alt: '',
   },
   {
     src: img0011,
-    vert: true,
     alt: '',
   },
   {
     src: img0012,
-    vert: true,
     alt: '',
   },
   {
     src: img0013,
-    vert: false,
     alt: '',
   },
   {
     src: img0014,
-    vert: true,
     alt: '',
   },
   {
     src: img0015,
-    vert: false,
     alt: '',
   },
   {
     src: img0016,
-    vert: false,
     alt: '',
   },
   {
     src: img0017,
-    vert: false,
     alt: '',
   },
   {
     src: img0018,
-    vert: true,
     alt: '',
   },
   {
     src: img0019,
-    vert: false,
     alt: '',
   },
   {
     src: img0020,
-    vert: false,
     alt: '',
   },
 ];
