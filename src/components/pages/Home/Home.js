@@ -30,37 +30,6 @@ import img0018 from './img/0018.jpg';
 import img0019 from './img/0019.jpg';
 import img0020 from './img/0020.jpg';
 
-// class Home extends React.Component {
-//   state = {};
-//   render() {
-//     return (
-//       <div className={classes.wrapper}>
-//         <div className={classes.innerWrapper}>
-//           <h1 className={classes.heading}>Under construction</h1>
-//           <div className={classes.noteWrapper}>
-//             <p className={classes.note}>
-//               Hello. I am working on some updates. Be back soon.
-//             </p>
-//             <p className={classes.date}>11/18/2020</p>
-//           </div>
-//         </div>
-//         <div className={classes.bgCover} />
-//         <ImageFadeIn
-//           style={{
-//             height: '100%',
-//             width: '100%',
-//             backgroundSize: 'cover',
-//             backgroundPosition: 'center',
-//           }}
-//           loadAsBackgroundImage
-//           opacityTransition={4}
-//           src={bgImage}
-//         />
-//       </div>
-//     );
-//   }
-// }
-
 const Home = () => {
   return (
     <React.Fragment>
