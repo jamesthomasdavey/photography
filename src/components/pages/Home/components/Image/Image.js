@@ -31,10 +31,9 @@ const Image = ({ source, alt, vert }) => {
       );
     }
   };
-  return (
-    <div className={classes.wrapper}>
-      <div className={classes.innerWrapper}>
-        {showImage()}
+  const showLoader = () => {
+    if (!imageLoaded) {
+      return (
         <LazyLoadImage
           src={source}
           height='0'
@@ -42,6 +41,14 @@ const Image = ({ source, alt, vert }) => {
           afterLoad={handleImageLoad}
           alt=''
         />
+      );
+    }
+  };
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.innerWrapper}>
+        {showImage()}
+        {showLoader()}
       </div>
     </div>
   );
