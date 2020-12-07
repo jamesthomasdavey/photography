@@ -2,9 +2,6 @@
 import React from 'react';
 import ImageFadeIn from 'react-image-fade-in';
 
-// css
-import classes from './Home.module.css';
-
 // components
 import Image from './components/Image/Image';
 
