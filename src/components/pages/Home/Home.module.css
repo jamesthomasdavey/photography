@@ -1,0 +1,11 @@
+.wrapper {
+  width: 100%;
+  background-color: #ededed;
+}
+
+.innerWrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 100vh;
+  margin: 0 auto;
+}

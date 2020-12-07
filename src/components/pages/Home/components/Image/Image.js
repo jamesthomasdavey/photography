@@ -7,19 +7,22 @@ import classes from './Image.module.css';
 
 const Image = ({ source, alt }) => (
   <div className={classes.wrapper}>
-    <ImageFadeIn
-      loadAsBackgroundImage={true}
-      style={{
-        height: '100%',
-        width: '100%',
-        backgroundSize: 'contain',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-      src={source}
-      opacityTransition={2}
-      role={alt ? 'img' : false}
-    />
+    <div className={classes.innerWrapper}>
+      {/* <div className={classes.blank} /> */}
+      <ImageFadeIn
+        loadAsBackgroundImage={true}
+        style={{
+          height: '100%',
+          width: '100%',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+        src={source}
+        opacityTransition={2}
+        role={alt ? 'img' : false}
+      />
+    </div>
   </div>
 );
 

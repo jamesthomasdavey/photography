@@ -1,9 +1,11 @@
 // packages
 import React from 'react';
-import ImageFadeIn from 'react-image-fade-in';
 
 // components
 import Image from './components/Image/Image';
+
+// css
+import classes from './Home.module.css';
 
 // img
 import img0001 from './img/0001.jpg';
@@ -29,28 +31,30 @@ import img0020 from './img/0020.jpg';
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <Image source={img0001} />
-      <Image source={img0002} />
-      <Image source={img0003} />
-      <Image source={img0004} />
-      <Image source={img0005} />
-      <Image source={img0006} />
-      <Image source={img0007} />
-      <Image source={img0008} />
-      <Image source={img0009} />
-      <Image source={img0010} />
-      <Image source={img0011} />
-      <Image source={img0012} />
-      <Image source={img0013} />
-      <Image source={img0014} />
-      <Image source={img0015} />
-      <Image source={img0016} />
-      <Image source={img0017} />
-      <Image source={img0018} />
-      <Image source={img0019} />
-      <Image source={img0020} />
-    </React.Fragment>
+    <div className={classes.wrapper}>
+      <div className={classes.innerWrapper}>
+        <Image source={img0001} />
+        <Image source={img0002} />
+        <Image source={img0003} />
+        <Image source={img0004} />
+        <Image source={img0005} />
+        <Image source={img0006} />
+        <Image source={img0007} />
+        <Image source={img0008} />
+        <Image source={img0009} />
+        <Image source={img0010} />
+        <Image source={img0011} />
+        <Image source={img0012} />
+        <Image source={img0013} />
+        <Image source={img0014} />
+        <Image source={img0015} />
+        <Image source={img0016} />
+        <Image source={img0017} />
+        <Image source={img0018} />
+        <Image source={img0019} />
+        <Image source={img0020} />
+      </div>
+    </div>
   );
 };
 
