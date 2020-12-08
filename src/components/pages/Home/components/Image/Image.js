@@ -4,7 +4,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // css
 import classes from './Image.module.css';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const Image = ({ source, alt }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -19,9 +18,8 @@ const Image = ({ source, alt }) => {
           style={{
             backgroundImage: `url(${source})`,
           }}
-          role='image'
           aria-label={alt ? alt : undefined}
-        ></div>
+        />
       );
     }
   };
