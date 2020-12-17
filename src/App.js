@@ -1,6 +1,11 @@
 // packages
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 
 // layout components
 // import Navigation from './compone/nts/layout/Navigation/Navigation';
@@ -23,6 +28,9 @@ class App extends React.Component {
         <Switch>
           {/* <Route exact path='/contact' component={Contact} /> */}
           <Route exact path='/' component={Home} />
+          <Route exact path='/home'>
+            <Redirect to='/' />
+          </Route>
           <Route exact path='/resume' component={Resume} />
           {/* <Route exact path='/resume-print' component={ResumePrint} /> */}
         </Switch>
