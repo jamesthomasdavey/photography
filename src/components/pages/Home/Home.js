@@ -110,6 +110,14 @@ const images = [
     src: img0020,
     alt: '',
   },
+  {
+    src: img0021,
+    alt: '',
+  },
+  {
+    src: img0022,
+    alt: '',
+  },
 ];
 
 const Home = () => {
