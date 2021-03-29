@@ -30,6 +30,7 @@ import img0019 from './img/0019.jpg';
 import img0020 from './img/0020.jpg';
 import img0021 from './img/0021.jpg';
 import img0022 from './img/0022.jpg';
+import img0023 from './img/0023.jpg';
 
 const images = [
   {
@@ -118,6 +119,10 @@ const images = [
   },
   {
     src: img0022,
+    alt: '',
+  },
+  {
+    src: img0023,
     alt: '',
   },
 ];
