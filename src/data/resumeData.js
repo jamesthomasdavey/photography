@@ -7,7 +7,7 @@ const resumeData = {
     'Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.',
   workExperiences: [
     {
-      dates: '2020 - Present',
+      dates: '2020 - 2021',
       company: 'Kaiser Permanente',
       title: 'Accessibility Design Specialist (Contract)',
       summary:
@@ -18,7 +18,7 @@ const resumeData = {
       ],
     },
     {
-      dates: '2019 - Present',
+      dates: '2019 - 2021',
       company: 'Level Access',
       title: 'Senior Accessibility Analyst',
       summary:
