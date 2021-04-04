@@ -32,6 +32,7 @@ class App extends React.Component {
             <Redirect to='/' />
           </Route>
           <Route exact path='/resume' component={Resume} />
+          <Route path='/*' component={Home} />
           {/* <Route exact path='/resume-print' component={ResumePrint} /> */}
         </Switch>
         {/* </Main> */}
