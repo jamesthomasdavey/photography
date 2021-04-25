@@ -3,6 +3,7 @@ import React from 'react';
 
 // components
 import Image from './components/Image/Image';
+import ContactForm from './components/ContactForm/ContactForm';
 
 // css
 import classes from './Home.module.css';
@@ -31,6 +32,9 @@ import img0020 from './img/0020.jpg';
 import img0021 from './img/0021.jpg';
 import img0022 from './img/0022.jpg';
 import img0023 from './img/0023.jpg';
+import img0024 from './img/0024.jpg';
+import img0025 from './img/0025.jpg';
+import img0026 from './img/0026.jpg';
 
 const images = [
   {
@@ -125,6 +129,18 @@ const images = [
     src: img0023,
     alt: '',
   },
+  {
+    src: img0024,
+    alt: '',
+  },
+  {
+    src: img0025,
+    alt: '',
+  },
+  {
+    src: img0026,
+    alt: '',
+  },
 ];
 
 const Home = () => {
@@ -139,6 +155,7 @@ const Home = () => {
             vert={image.vert}
           />
         ))}
+        {/* <ContactForm /> */}
       </div>
     </div>
   );
