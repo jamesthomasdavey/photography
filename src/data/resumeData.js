@@ -7,13 +7,24 @@ const resumeData = {
     'Digital accessibility expert with DHS Trusted Tester certification, specializing in front-end web development, WCAG and Section 508 conformance, and educating developers to improve usability across all platforms.',
   workExperiences: [
     {
+      dates: '2021 - Present',
+      company: 'CVS Health',
+      title: 'Accessibility Engineer Lead (Contract)',
+      summary:
+        'Responsible for coordinating and conducting accessibility testing, remediation, education sessions, and design reviews across several internal product teams.',
+      responsibilities: [
+        'Developed accessible components and usage guidelines for the component library, directly improving accessibility in several web applications.',
+        'Set internal accessibility standards for data visualization methods such as complex grids, charts, graphs, and data tables.',
+      ],
+    },
+    {
       dates: '2020 - 2021',
       company: 'Kaiser Permanente',
       title: 'Accessibility Design Specialist (Contract)',
       summary:
-        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and site-wide, to be used by millions of current and future members.",
+        "Responsible for design reviews and risk assessment for in-development components on Kaiser's front page and site-wide, to be used by millions of members.",
       responsibilities: [
-        'Collaborated with the design team to maximize accessibility and usability of components before handing off to the development team.',
+        'Collaborated with the design team to maximize accessibility and usability of components before handoff to the development team.',
         "Defined new accessibility optimizations for Kaiser's design system documentation, upholding their standards as a healthcare industry leader.",
       ],
     },
@@ -22,7 +33,7 @@ const resumeData = {
       company: 'Level Access',
       title: 'Senior Accessibility Analyst',
       summary:
-        'Responsible for conducting accessibility audits to comply with legal standards, helping organizations to minimize risk for their websites, mobile applications, and software.',
+        'Responsible for conducting accessibility audits to comply with legal standards, helping organizations to minimize risk for their websites and mobile applications.',
       responsibilities: [
         //and showcase their accessibility awareness.
         'Oversaw long-term projects and maintained strong client relationships, resulting in multiple future sales and service product renewals.',
@@ -32,28 +43,28 @@ const resumeData = {
       ],
     },
     {
-      dates: '2018 - 2019',
+      dates: '2017 - 2019',
       company: 'Freelance',
-      title: 'Web Developer',
+      title: 'Acessibility Web Developer',
       // summary:
       //   'Designed and launched web applications using modern front-end technology for businesses and personal commissions.',
       responsibilities: [
-        'Built websites using VanillaJS and JavaScript frameworks and libraries such as React, Mongoose, and Express with Node.js.',
+        'Built accessible websites using VanillaJS and JavaScript frameworks and libraries such as React, Mongoose, and Express with Node.js.',
         'Implemented advanced JavaScript concepts such as promises, async/await, callbacks, recursion, and closures.',
       ],
     },
-    {
-      dates: '2016 - 2018',
-      company: 'Orange Photography',
-      title: 'Digital Tech',
-      // summary:
-      //   'Responsible for designing photo templates, configuring image software, and supporting a team of photographers, videographers, and technicians.',
-      responsibilities: [
-        // 'Edited, organized, and optimized digital assets for online and print delivery in large volumes.',
-        'Designed photo templates, configured image software, and supported a team of photographers, videographers, and technicians.',
-        'Wrote documentation for software, camera, and lighting of complex studio setups, streamlining the creation of marketable photo products.',
-      ],
-    },
+    // {
+    //   dates: '2016 - 2018',
+    //   company: 'Orange Photography',
+    //   title: 'Digital Tech',
+    //   // summary:
+    //   //   'Responsible for designing photo templates, configuring image software, and supporting a team of photographers, videographers, and technicians.',
+    //   responsibilities: [
+    //     // 'Edited, organized, and optimized digital assets for online and print delivery in large volumes.',
+    //     'Designed photo templates, configured image software, and supported a team of photographers, videographers, and technicians.',
+    //     'Wrote documentation for software, camera, and lighting of complex studio setups, streamlining the creation of marketable photo products.',
+    //   ],
+    // },
   ],
   education: {
     school: 'University of California, Davis',
@@ -70,6 +81,7 @@ const resumeData = {
     'JavaScript',
     'React',
     'Git',
+    'Rally',
     'Jira',
   ],
 };
