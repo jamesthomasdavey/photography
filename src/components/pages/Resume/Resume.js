@@ -47,14 +47,12 @@ const ResumePrint = () => {
                   <div className={classes.dateHeading}>
                     {workExperience.dates}
                   </div>
-                  <div className={classes.roleHeading}>
+                  <div className={classes.roleHeading} role='text'>
                     {workExperience.company}, {workExperience.title}
                   </div>
                 </h3>
                 <div className={classes.expContent}>
-                  {workExperience.summary && (
-                    <p id='hey'>{workExperience.summary}</p>
-                  )}
+                  {workExperience.summary && <p>{workExperience.summary}</p>}
                   <ul>
                     {workExperience.responsibilities.map(responsibility => {
                       return <li>{responsibility}</li>;
