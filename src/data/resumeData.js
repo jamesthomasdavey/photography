@@ -45,7 +45,7 @@ const resumeData = {
     {
       dates: '2017 - 2019',
       company: 'Freelance',
-      title: 'Acessibility Web Developer',
+      title: 'Accessibility Web Developer',
       // summary:
       //   'Designed and launched web applications using modern front-end technology for businesses and personal commissions.',
       responsibilities: [
