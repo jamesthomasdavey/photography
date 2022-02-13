@@ -35,6 +35,14 @@ import img0023 from './img/0023.jpg';
 import img0024 from './img/0024.jpg';
 import img0025 from './img/0025.jpg';
 import img0026 from './img/0026.jpg';
+import img0028 from './img/0027.jpg';
+import img0027 from './img/0028.jpg';
+import img0029 from './img/0029.jpg';
+import img0030 from './img/0030.jpg';
+import img0031 from './img/0031.jpg';
+import img0032 from './img/0032.jpg';
+import img0033 from './img/0033.jpg';
+import img0034 from './img/0034.jpg';
 
 const images = [
   {
@@ -139,6 +147,38 @@ const images = [
   },
   {
     src: img0026,
+    alt: '',
+  },
+  {
+    src: img0027,
+    alt: '',
+  },
+  {
+    src: img0028,
+    alt: '',
+  },
+  {
+    src: img0029,
+    alt: '',
+  },
+  {
+    src: img0030,
+    alt: '',
+  },
+  {
+    src: img0031,
+    alt: '',
+  },
+  {
+    src: img0032,
+    alt: '',
+  },
+  {
+    src: img0033,
+    alt: '',
+  },
+  {
+    src: img0034,
     alt: '',
   },
 ];
