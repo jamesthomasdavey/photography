@@ -13,6 +13,20 @@ const Image = ({ source }) => {
     alt: "",
     landscape: false,
   });
+  if (!imageMetadata.loaded) {
+    exifr
+      .parse(source)
+      .then((metadata) => {
+        setImageMetadata({
+          loaded: true,
+          alt: metadata.ImageDescription
+            ? metadata.ImageDescription
+            : "Caption not yet available.",
+          // landscape: metadata.ExifImageHeight < metadata.ExifImageWidth,
+        });
+      })
+      .catch((err) => console.log(err));
+  }
 
   const handleImageLoad = () => {
     setImageLoaded(true);
@@ -20,30 +34,26 @@ const Image = ({ source }) => {
   const showImage = () => {
     if (imageLoaded && imageMetadata.loaded) {
       return (
-        <div
-          className={classes.img}
-          style={{
-            backgroundImage: `url(${source})`,
-          }}
-          aria-hidden={imageMetadata.alt ? undefined : "true"}
-          aria-label={imageMetadata.alt}
-        />
+        <React.Fragment>
+          <div
+            className={classes.img}
+            style={{
+              backgroundImage: `url(${source})`,
+            }}
+            role="img"
+            aria-label={imageMetadata.alt}
+          />
+          {/* <img
+            src={source}
+            className={[
+              classes.image,
+              imageMetadata.landscape ? classes.landscape : classes.portrait,
+            ].join(" ")}
+          /> */}
+        </React.Fragment>
       );
     }
   };
-
-  if (!imageMetadata.loaded) {
-    exifr
-      .parse(source)
-      .then((metadata) => {
-        setImageMetadata({
-          loaded: true,
-          alt: metadata.ImageDescription ? metadata.ImageDescription : "",
-          landscape: metadata.ExifImageHeight < metadata.ExifImageWidth,
-        });
-      })
-      .catch((err) => console.log(err));
-  }
 
   const hideLoader = () => {
     if (!imageLoaded) {
@@ -58,6 +68,7 @@ const Image = ({ source }) => {
       );
     }
   };
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.innerWrapper}>

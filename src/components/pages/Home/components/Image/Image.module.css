@@ -11,7 +11,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 58px;
+  padding: 58px 6%;
 }
 
 .img {
@@ -22,6 +22,19 @@
   background-repeat: no-repeat;
   -webkit-animation: fadein 1.5s ease;
   animation: fadein 1.5s ease;
+}
+
+.image {
+}
+
+.landscape {
+  width: 100%;
+  height: 80%;
+}
+
+.portrait {
+  width: 80%;
+  height: 100%;
 }
 
 @-webkit-keyframes fadein {
@@ -41,3 +54,9 @@
     opacity: 1;
   }
 }
+
+/* @media screen and (max-width: 700px) {
+  .innerWrapper {
+    padding: 58px 0;
+  }
+} */
