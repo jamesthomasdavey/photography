@@ -29,23 +29,26 @@
   animation: fadein 1.5s ease;
 }
 
+.hiddenImage {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .image {
+  display: block;
+  animation: fadein 1.5s ease;
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   user-select: none;
   pointer-events: none;
-  opacity: 0;
-  transition: 1.5s opacity ease;
-  -webkit-transition: 1.5s opacity ease;
-  -moz-transition: 1.5s opacity ease;
-  -ms-transition: 1.5s opacity ease;
-  -o-transition: 1.5s opacity ease;
-}
-
-.loaded {
-  opacity: 100%;
+  -webkit-animation: fadein 1.5s ease;
 }
 
 @-webkit-keyframes fadein {
