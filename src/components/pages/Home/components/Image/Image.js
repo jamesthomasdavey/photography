@@ -1,31 +1,26 @@
 // packages
-import React, { useState } from "react";
-import exifr from "exifr";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React, { useState } from 'react';
+import exifr from 'exifr';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // css
-import classes from "./Image.module.css";
+import classes from './Image.module.css';
 
 const Image = ({ source }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageMetadata, setImageMetadata] = useState({
-    loaded: false,
-    alt: "",
-    landscape: false,
-  });
+  const [imageMetadata, setImageMetadata] = useState({ loaded: false });
   if (!imageMetadata.loaded) {
     exifr
       .parse(source)
-      .then((metadata) => {
+      .then(metadata => {
         setImageMetadata({
           loaded: true,
           alt: metadata.ImageDescription
             ? metadata.ImageDescription
-            : "Caption not yet available.",
-          // landscape: metadata.ExifImageHeight < metadata.ExifImageWidth,
+            : 'Caption not yet available.',
         });
       })
-      .catch((err) => console.log(err));
+      .catch(err => console.log(err));
   }
 
   const handleImageLoad = () => {
@@ -35,21 +30,15 @@ const Image = ({ source }) => {
     if (imageLoaded && imageMetadata.loaded) {
       return (
         <React.Fragment>
-          <div
+          {/* <div
             className={classes.img}
             style={{
               backgroundImage: `url(${source})`,
             }}
-            role="img"
+            role='img'
             aria-label={imageMetadata.alt}
-          />
-          {/* <img
-            src={source}
-            className={[
-              classes.image,
-              imageMetadata.landscape ? classes.landscape : classes.portrait,
-            ].join(" ")}
           /> */}
+          <img src={source} className={classes.image} alt={imageMetadata.alt} />
         </React.Fragment>
       );
     }
@@ -60,22 +49,22 @@ const Image = ({ source }) => {
       return (
         <LazyLoadImage
           src={source}
-          height="0"
-          width="0"
+          height='0'
+          width='0'
           afterLoad={handleImageLoad}
-          alt=""
+          alt=''
         />
       );
     }
   };
 
   return (
-    <div className={classes.wrapper}>
+    <li className={classes.wrapper}>
       <div className={classes.innerWrapper}>
         {showImage()}
         {hideLoader()}
       </div>
-    </div>
+    </li>
   );
 };
 
