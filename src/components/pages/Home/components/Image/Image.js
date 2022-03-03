@@ -28,13 +28,15 @@ const Image = ({ source }) => {
   };
   const showImage = () => {
     if (imageMetadata.loaded) {
-      if (imageLoaded) {
-        return (
-          <img src={source} className={classes.image} alt={imageMetadata.alt} />
-        );
-      } else {
-        return <span role='img' aria-label={imageMetadata.alt} />;
-      }
+      return (
+        <img
+          src={source}
+          className={[classes.image, imageLoaded ? classes.loaded : ''].join(
+            ' '
+          )}
+          alt={imageMetadata.alt}
+        />
+      );
     }
   };
 

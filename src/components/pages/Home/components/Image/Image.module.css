@@ -30,22 +30,22 @@
 }
 
 .image {
-  animation: fadein 1.5s ease;
-  /* display: block; */
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   user-select: none;
   pointer-events: none;
+  opacity: 0;
+  transition: 1.5s opacity ease;
+  -webkit-transition: 1.5s opacity ease;
+  -moz-transition: 1.5s opacity ease;
+  -ms-transition: 1.5s opacity ease;
+  -o-transition: 1.5s opacity ease;
 }
 
-.landscape {
-}
-
-.portrait {
-  /* width: 80%; */
-  /* height: 100%; */
+.loaded {
+  opacity: 100%;
 }
 
 @-webkit-keyframes fadein {
