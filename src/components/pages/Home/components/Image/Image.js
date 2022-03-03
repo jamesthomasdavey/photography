@@ -27,20 +27,14 @@ const Image = ({ source }) => {
     setImageLoaded(true);
   };
   const showImage = () => {
-    if (imageLoaded && imageMetadata.loaded) {
-      return (
-        <React.Fragment>
-          {/* <div
-            className={classes.img}
-            style={{
-              backgroundImage: `url(${source})`,
-            }}
-            role='img'
-            aria-label={imageMetadata.alt}
-          /> */}
+    if (imageMetadata.loaded) {
+      if (imageLoaded) {
+        return (
           <img src={source} className={classes.image} alt={imageMetadata.alt} />
-        </React.Fragment>
-      );
+        );
+      } else {
+        return <span role='img' aria-label={imageMetadata.alt} />;
+      }
     }
   };
 
