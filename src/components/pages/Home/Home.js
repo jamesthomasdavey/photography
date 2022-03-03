@@ -3,7 +3,6 @@ import React from "react";
 
 // components
 import Image from "./components/Image/Image";
-import ContactForm from "./components/ContactForm/ContactForm";
 
 // css
 import classes from "./Home.module.css";
