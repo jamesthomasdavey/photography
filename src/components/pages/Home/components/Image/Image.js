@@ -1,10 +1,10 @@
 // packages
-import React, { useState } from 'react';
-import exifr from 'exifr';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import React, { useState } from "react";
+import exifr from "exifr";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // css
-import classes from './Image.module.css';
+import classes from "./Image.module.css";
 
 const Image = ({ source }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -12,15 +12,15 @@ const Image = ({ source }) => {
   if (!imageMetadata.loaded) {
     exifr
       .parse(source)
-      .then(metadata => {
+      .then((metadata) => {
         setImageMetadata({
           loaded: true,
           alt: metadata.ImageDescription
             ? metadata.ImageDescription
-            : 'Caption not yet available.',
+            : "Caption not yet available.",
         });
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }
 
   const handleImageLoad = () => {
@@ -43,10 +43,10 @@ const Image = ({ source }) => {
       return (
         <LazyLoadImage
           src={source}
-          height='0'
-          width='0'
+          height="0"
+          width="0"
           afterLoad={handleImageLoad}
-          alt=''
+          alt=""
         />
       );
     }

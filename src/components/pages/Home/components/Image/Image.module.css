@@ -29,16 +29,6 @@
   animation: fadein 1.5s ease;
 }
 
-.hiddenImage {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .image {
   display: block;
   animation: fadein 1.5s ease;
@@ -49,6 +39,15 @@
   user-select: none;
   pointer-events: none;
   -webkit-animation: fadein 1.5s ease;
+}
+
+.hiddenImage {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  opacity: 0;
 }
 
 @-webkit-keyframes fadein {
