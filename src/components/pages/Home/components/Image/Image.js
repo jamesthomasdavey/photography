@@ -20,7 +20,13 @@ const Image = ({ source }) => {
             : "Caption not yet available.",
         });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setImageMetadata({
+          loaded: true,
+          alt: "Unable to load caption. Sorry for the inconvenience.",
+        });
+      });
   }
 
   const handleImageLoad = () => {
