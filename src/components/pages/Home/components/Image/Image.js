@@ -31,7 +31,10 @@ const Image = ({ source }) => {
       return (
         <img
           src={source}
-          className={imageLoaded ? classes.image : classes.hiddenImage}
+          className={[
+            classes.image,
+            imageLoaded ? "" : classes.hiddenImage,
+          ].join(" ")}
           alt={imageMetadata.alt}
         />
       );
