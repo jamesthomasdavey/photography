@@ -8,8 +8,12 @@ import classes from "./Image.module.css";
 
 const Image = ({ source }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageMetadata, setImageMetadata] = useState({ loaded: false });
-  if (!imageMetadata.loaded) {
+  const [imageMetadata, setImageMetadata] = useState({
+    loaded: false,
+    alt: "Loading alt text",
+  });
+
+  if (imageLoaded && !imageMetadata.loaded) {
     exifr
       .parse(source)
       .then((metadata) => {
@@ -20,25 +24,17 @@ const Image = ({ source }) => {
             : "Caption not yet available.",
         });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setImageMetadata({
+          loaded: true,
+          alt: "Unable to load caption. Sorry for the inconvenience.",
+        });
+      });
   }
 
   const handleImageLoad = () => {
     setImageLoaded(true);
-  };
-  const showImage = () => {
-    if (imageMetadata.loaded) {
-      return (
-        <img
-          src={source}
-          className={[
-            classes.image,
-            imageLoaded ? classes.visibleImage : classes.hiddenImage,
-          ].join(" ")}
-          alt={imageMetadata.alt}
-        />
-      );
-    }
   };
 
   const hideLoader = () => {
@@ -55,11 +51,24 @@ const Image = ({ source }) => {
     }
   };
 
+  const showImage = () => {
+    return (
+      <img
+        src={source}
+        className={[
+          classes.image,
+          imageLoaded ? classes.visibleImage : classes.hiddenImage,
+        ].join(" ")}
+        alt={imageMetadata.alt}
+      />
+    );
+  };
+
   return (
     <li className={classes.wrapper}>
       <div className={classes.innerWrapper}>
-        {showImage()}
         {hideLoader()}
+        {showImage()}
       </div>
     </li>
   );
