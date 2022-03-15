@@ -10,7 +10,7 @@ const Image = ({ source }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageMetadata, setImageMetadata] = useState({
     loaded: false,
-    alt: "Loading alt text",
+    alt: "Loading alt text...",
   });
 
   if (imageLoaded && !imageMetadata.loaded) {
