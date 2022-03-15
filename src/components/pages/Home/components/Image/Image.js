@@ -1,5 +1,6 @@
 // packages
 import React, { useState } from "react";
+import EXIF from "exif-js";
 import exifr from "exifr";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -10,27 +11,39 @@ const Image = ({ source }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageMetadata, setImageMetadata] = useState({
     loaded: false,
-    alt: "Loading alt text",
+    alt: "Loading alt text...",
   });
 
   if (imageLoaded && !imageMetadata.loaded) {
-    exifr
-      .parse(source)
-      .then((metadata) => {
-        setImageMetadata({
-          loaded: true,
-          alt: metadata.ImageDescription
-            ? metadata.ImageDescription
-            : "Caption not yet available.",
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-        setImageMetadata({
-          loaded: true,
-          alt: "Unable to load caption. Sorry for the inconvenience.",
-        });
+    const imgSrc = document.getElementById(source);
+    EXIF.getData(imgSrc, function () {
+      const imageDescription = EXIF.getAllTags(this).ImageDescription;
+      console.log(imageDescription);
+      setImageMetadata({
+        loaded: true,
+        alt: imageDescription
+          ? imageDescription
+          : "Error importing caption. Sorry for the inconvenience.",
       });
+    });
+
+    // exifr
+    //   .parse(source)
+    //   .then((metadata) => {
+    //     setImageMetadata({
+    //       loaded: true,
+    //       alt: metadata.ImageDescription
+    //         ? metadata.ImageDescription
+    //         : "Caption not yet available.",
+    //     });
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //     setImageMetadata({
+    //       loaded: true,
+    //       alt: "Unable to load caption. Sorry for the inconvenience.",
+    //     });
+    //   });
   }
 
   const handleImageLoad = () => {
@@ -60,6 +73,7 @@ const Image = ({ source }) => {
           imageLoaded ? classes.visibleImage : classes.hiddenImage,
         ].join(" ")}
         alt={imageMetadata.alt}
+        id={source}
       />
     );
   };
