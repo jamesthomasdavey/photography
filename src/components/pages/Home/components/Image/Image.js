@@ -18,7 +18,6 @@ const Image = ({ source }) => {
     const imgSrc = document.getElementById(source);
     EXIF.getData(imgSrc, function () {
       const imageDescription = EXIF.getAllTags(this).ImageDescription;
-      console.log(imageDescription);
       setImageMetadata({
         loaded: true,
         alt: imageDescription
