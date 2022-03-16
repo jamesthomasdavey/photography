@@ -8,6 +8,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import classes from "./Image.module.css";
 
 const Image = ({ source }) => {
+  const [imageScrolled, setImageScrolled] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageMetadata, setImageMetadata] = useState({
     loaded: false,
@@ -45,18 +46,22 @@ const Image = ({ source }) => {
     //   });
   }
 
+  const handleImageScrolled = () => {
+    setImageScrolled(true);
+  };
+
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
 
-  const hideLoader = () => {
-    if (!imageLoaded) {
+  const hideLoaderOnScroll = () => {
+    if (!imageScrolled) {
       return (
         <LazyLoadImage
           src={source}
           height="0"
           width="0"
-          afterLoad={handleImageLoad}
+          afterLoad={handleImageScrolled}
           alt=""
         />
       );
@@ -69,10 +74,11 @@ const Image = ({ source }) => {
         src={source}
         className={[
           classes.image,
-          imageLoaded ? classes.visibleImage : classes.hiddenImage,
+          imageScrolled ? classes.visibleImage : classes.hiddenImage,
         ].join(" ")}
         alt={imageMetadata.alt}
         id={source}
+        onLoad={handleImageLoad}
       />
     );
   };
@@ -80,7 +86,7 @@ const Image = ({ source }) => {
   return (
     <li className={classes.wrapper}>
       <div className={classes.innerWrapper}>
-        {hideLoader()}
+        {hideLoaderOnScroll()}
         {showImage()}
       </div>
     </li>
