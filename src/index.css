@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
 
 /*****************************
 ************************ BASE
 *****************************/
 
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
 }
@@ -20,7 +19,6 @@ html {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -31,8 +29,8 @@ html {
   --gray: #767676;
   --light-gray: #767676;
   --white: #fdfdfd;
-  --open-sans: 'Open Sans', sans-serif;
-  --nunito-sans: 'Nunito Sans', sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --nunito-sans: "Nunito Sans", sans-serif;
   font-size: 16px;
 }
 
