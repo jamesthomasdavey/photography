@@ -159,9 +159,9 @@ const images = [
   {
     src: img0037,
   },
-  {
-    src: img0038,
-  },
+  // {
+  //   src: img0038,
+  // },
 ];
 
 const Home = () => {
